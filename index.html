@@ -404,6 +404,7 @@ main{flex:1;display:flex;flex-direction:column;align-items:center;padding:10px 1
   <div id="footerZone"></div>
 </div>
 <div id="fxLayer"></div>
+<a href="market-adventure.html" style="position:fixed;right:18px;bottom:18px;z-index:9999;background:#4AAA62;color:white;text-decoration:none;padding:14px 20px;border-radius:22px;font-family:'Baloo 2',sans-serif;font-weight:800;box-shadow:0 5px 0 #287C3D;">🛍️ MARKET ADVENTURE</a>
 
 <script>
 /* =========================================================================
@@ -764,6 +765,7 @@ function screenOpening(){
     <button class="big-btn" ${S.mode?'':'disabled'} onclick="startMission()">🚀 START THE MISSION!</button>
   </div>`;
 }
+function openMarketAdventure(){ window.location.href='market-adventure.html'; }
 function selectMode(m){ S.mode=m; render(); speak(m==='teacher'?'Teacher led classroom mode selected.':'Child play mode selected. Lets play!'); }
 function startMission(){
   if(!S.mode) return;
